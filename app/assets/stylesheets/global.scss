@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: helvetica;
+}
+section.left-column {
+  width:340px;
+  position: fixed;
+  padding: 4rem 3rem;
+  height: 100vh;
+  h1 {
+    font-family: "Arial Black";
+    font-weight: bold;
+    font-size: 60px;
+    margin: 4rem initial;
+    margin-left: -4px;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    line-height: 0.72;
+    span {
+      margin-left:-9px;
+    }
+  }
+  h4 {
+
+  }
+  .nav {
+    padding: 4rem 0;
+    font-family: "arial black";
+    font-size:30px;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    :first-child:after {
+      content:"";
+      position: absolute;
+      padding:.22rem 3rem;
+      left:-.2rem;
+      top:1.6rem;
+      background:magenta;
+    }
+    li {
+      padding: 15px 0;
+      position: relative;
+    }
+  }
+  .contact-info {
+    position: absolute;
+    bottom: 2rem;
+  }
+}
