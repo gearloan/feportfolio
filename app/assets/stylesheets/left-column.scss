@@ -1,0 +1,54 @@
+section.left-column {
+  width:340px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  padding: 4rem 3rem;
+  height: 100vh;
+  h1 {
+    font-family: "Arial Black";
+    font-weight: bold;
+    font-size: 60px;
+    margin: 4rem initial;
+    margin-left: -4px;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    line-height: 0.72;
+    span {
+      margin-left:-9px;
+    }
+  }
+  h4 {
+
+  }
+  .nav {
+    padding: 4rem 0;
+    font-family: "arial black";
+    font-size:30px;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    line-height: .7;
+    li {
+      padding: 10px 0;
+      position: relative;
+      a {
+        position: relative;
+        &.active {
+          color:yellow;
+        }
+        :after {
+          content:"";
+          position: absolute;
+          padding:.22rem 3rem;
+          left:-.2rem;
+          top:1rem;
+          background:magenta;
+        }
+      }
+    }
+  }
+  .contact-info {
+    position: absolute;
+    bottom: 2rem;
+  }
+}

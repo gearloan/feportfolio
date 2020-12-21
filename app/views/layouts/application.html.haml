@@ -3,9 +3,15 @@
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title FePortfolio
+
+    %link{:href => "https://fonts.gstatic.com", :rel => "preconnect"}/
+    %link{:href => "https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap", :rel => "stylesheet"}/
+
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
-  %body
-    = yield
+  %body{"data-action" => "#{controller.action_name}", "data-controller" => "#{controller.controller_path}"}
+    =render "shared/leftColumn"
+    %section.right-column
+      = yield
