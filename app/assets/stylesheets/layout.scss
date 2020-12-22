@@ -1,13 +1,18 @@
 body {
   display: flex;
-  //width:340px;
-  top: 0;
-  left: 0;
-  position: fixed;
   //padding: 4rem 3rem;
-  height: 100vh;
+  min-height: 100vh;
   .left-column {
-    padding:5rem 3rem;
+    padding:5rem 4rem 5rem 3rem;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    position: fixed;
+    width: 350px;
+  }
+  .left-col-proxy {
+    flex-basis:350px;
+    min-width: 350px;
   }
   .right-column {
     padding: 15.5rem 2rem 2rem 4rem;
