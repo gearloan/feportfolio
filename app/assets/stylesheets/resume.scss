@@ -1,0 +1,14 @@
+body[data-action='resume'] {
+  .resume {
+    //padding: 9rem 4rem;    
+  }
+  .r-main {
+    display: flex;
+    .r-body {
+      flex-grow: 1;
+    }
+    .r-sidebar {
+      flex-basis: 12rem;
+    }
+  }
+}

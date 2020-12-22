@@ -1,10 +1,4 @@
 section.left-column {
-  width:340px;
-  top: 0;
-  left: 0;
-  position: fixed;
-  padding: 4rem 3rem;
-  height: 100vh;
   h1 {
     font-family: "Arial Black";
     font-weight: bold;
@@ -22,7 +16,7 @@ section.left-column {
 
   }
   .nav {
-    padding: 4rem 0;
+    padding: 4rem 1rem 4rem 0;
     font-family: "arial black";
     font-size:30px;
     letter-spacing: -2px;

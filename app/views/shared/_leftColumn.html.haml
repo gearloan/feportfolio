@@ -10,22 +10,14 @@
     %li.active
       =link_to 'home', root_path, :class => active_class('/')
     %li
-      =link_to 'code', static_pages_code_path, :class =>  active_class(static_pages_code_path)
-    %li
-      =link_to 'resume', static_pages_resume_path, :class => active_class(static_pages_resume_path)
+      =link_to 'code samples', static_pages_code_path, :class =>  active_class(static_pages_code_path)
     %li
       =link_to 'work gallery',static_pages_gallery_path, :class => active_class(static_pages_gallery_path)
+    %li
+      =link_to 'resume', static_pages_resume_path, :class => active_class(static_pages_resume_path)
 
   .contact-info
     %h6.email
       johnsfuller@gmail.com
     %h6.phone-number
       202-681-8640
-
-  %ul.code-examlples
-    %li.item
-      %p.title
-      %p.description
-      %p.markup
-      %p.styles
-      %p.js
