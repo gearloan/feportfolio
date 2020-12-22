@@ -1,11 +1,12 @@
 body {
   display: flex;
+  max-width: 1440px;
+  margin: auto;
   //padding: 4rem 3rem;
   min-height: 100vh;
   .left-column {
-    padding:5rem 4rem 5rem 3rem;
+    padding: 5rem 4rem 5rem 3rem;
     top: 0;
-    left: 0;
     height: 100vh;
     position: fixed;
     width: 350px;
@@ -16,7 +17,7 @@ body {
   }
   .right-column {
     padding: 15.5rem 2rem 2rem 4rem;
-    //margin-left: 340px;
-    //width: auto;
+    min-height: 101vh;
+    position: relative;
   }
 }

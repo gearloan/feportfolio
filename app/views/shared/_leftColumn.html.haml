@@ -8,13 +8,13 @@
 
   %ul.nav
     %li.active
-      =link_to 'home', root_path, :class => active_class('/')
+      =link_to 'home /resume', static_pages_resume_path, :class => active_class(static_pages_resume_path)
     %li
       =link_to 'code samples', static_pages_code_path, :class =>  active_class(static_pages_code_path)
     %li
       =link_to 'work gallery',static_pages_gallery_path, :class => active_class(static_pages_gallery_path)
     %li
-      =link_to 'resume', static_pages_resume_path, :class => active_class(static_pages_resume_path)
+      =link_to 'personal', static_pages_personal_path, :class => active_class(static_pages_personal_path)
 
   .contact-info
     %h6.email
