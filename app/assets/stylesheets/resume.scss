@@ -1,6 +1,14 @@
 body[data-action='resume'] {
   .resume {
-    //padding: 9rem 4rem;    
+    //padding: 9rem 4rem;
+  }
+  .intro {
+    padding-right: 6rem;
+    margin-bottom: 2rem;
+  }
+  h3 {
+    font-family: 'Arial Black';
+    font-size: 1.25rem;
   }
   .r-main {
     display: flex;
@@ -11,4 +19,16 @@ body[data-action='resume'] {
       flex-basis: 12rem;
     }
   }
+  .work-entry, .edu-entry {
+    display: flex;
+    margin-bottom: 2rem;
+    .left {
+      min-width: 240px;
+      padding-right: 4rem;
+    }
+    .right {
+      padding-right: 6rem;
+    }
+  }
+
 }
