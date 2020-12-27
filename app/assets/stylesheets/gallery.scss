@@ -1,4 +1,16 @@
 body[data-action='gallery'] {
+  .gallery-entry {
+    display: flex;
+    //flex-direction: row-reverse;
+    .img-pholder {
+      //flex-basis: 90%;
+    }
+    .text {
+      padding: 2rem;
+      padding-top: 4rem;
+      flex-basis: 20rem;
+    }
+  }
   p {
     max-width: 720px;
   }
@@ -6,6 +18,6 @@ body[data-action='gallery'] {
     width: 720px;
     height: 420px;
     background: black;
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
   }
 }

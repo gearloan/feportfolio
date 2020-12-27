@@ -1,39 +1,20 @@
 body[data-action='resume'] {
   .resume {
     //padding: 9rem 4rem;
-  }
-  .intro {
-    padding-right: 6rem;
-    margin-bottom: 2rem;
-    display: flex;
-    > :nth-child(1) {
-      flex-basis: 4;
-      margin-right: 4rem
+    max-width: 768px;
+    h3 {
+      font-family: 'Arial Black';
+      font-size: 1.25rem;
+      color:#444;
     }
-    > :nth-child(2) {
-      font-size:2rem;
-      flex-basis: 2;
-      margin-top: -.75rem;
+    h4 {
+      margin-bottom: .5rem;
     }
-  }
-  ul.logo-strip {
-    margin-bottom: 2rem;
-    li {
-      display: inline-block;
-      width: 12rem;
-      height: 4rem;
-      background: #222;
+    h5 {
+      color:#777;
+      font-style: italic;
+      font-weight: initial;
     }
-  }
-  h3 {
-    font-family: 'Arial Black';
-    font-size: 1.25rem;
-    color:#444;
-  }
-  h5 {
-    color:#777;
-    font-style: italic;
-    font-weight: initial;
   }
   .r-main {
     display: flex;

@@ -1,0 +1,40 @@
+body[data-action='index'] {
+  .intro {
+    margin-bottom: 2rem;
+    display: flex;
+    > :nth-child(1) {
+      flex-basis: 4;
+      margin-right: 4rem
+    }
+    .byline {
+      display:block;
+      font-size: .9rem;
+      font-style: italic;
+    }
+    > :nth-child(2) {
+      font-size:2rem;
+      flex-basis: 70rem;
+      margin-top: -.75rem;
+    }
+  }
+  ul.logo-strip {
+    margin-bottom: 2rem;
+    li {
+      display: inline-block;
+      width: 11.8rem;
+      height: 4rem;
+      margin-left: -2px;
+      background: #222;
+    }
+  }
+  .photo-grid {
+    width: 100%;
+    li {
+      display: inline-block;
+      width: 48%;
+      height: 420px;
+      margin-left: -2px;
+      background: #222;
+    }
+  }
+}
