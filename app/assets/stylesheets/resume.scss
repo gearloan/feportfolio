@@ -5,10 +5,35 @@ body[data-action='resume'] {
   .intro {
     padding-right: 6rem;
     margin-bottom: 2rem;
+    display: flex;
+    > :nth-child(1) {
+      flex-basis: 4;
+      margin-right: 4rem
+    }
+    > :nth-child(2) {
+      font-size:2rem;
+      flex-basis: 2;
+      margin-top: -.75rem;
+    }
+  }
+  ul.logo-strip {
+    margin-bottom: 2rem;
+    li {
+      display: inline-block;
+      width: 12rem;
+      height: 4rem;
+      background: #222;
+    }
   }
   h3 {
     font-family: 'Arial Black';
     font-size: 1.25rem;
+    color:#444;
+  }
+  h5 {
+    color:#777;
+    font-style: italic;
+    font-weight: initial;
   }
   .r-main {
     display: flex;
@@ -16,7 +41,15 @@ body[data-action='resume'] {
       flex-grow: 1;
     }
     .r-sidebar {
-      flex-basis: 12rem;
+      flex-basis: 10rem;
+      padding-top: 4rem;
+      .me {
+        background: #222;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        margin-bottom: 2rem;
+      }
     }
   }
   .work-entry, .edu-entry {
