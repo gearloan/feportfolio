@@ -22,13 +22,23 @@ section.left-column {
     letter-spacing: -2px;
     text-transform: uppercase;
     line-height: .7;
+    :first-child a.active {
+      color:cyan;
+    }
+    :nth-child(2) a.active {
+      color:magenta;
+    }
+    :nth-child(3) a.active {
+      color:yellow;
+    }
     li {
       padding: 10px 0;
       position: relative;
       a {
+        color:white;
         position: relative;
         &.active {
-          color:yellow;
+        //  color:yellow;
         }
         :after {
           content:"";
