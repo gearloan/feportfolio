@@ -22,6 +22,9 @@ section.left-column {
     letter-spacing: -2px;
     text-transform: uppercase;
     line-height: .7;
+    @media(max-width: 1284px) {
+      //height: 800px;
+    }
     :first-child a.active {
       color:cyan;
     }
@@ -52,6 +55,8 @@ section.left-column {
     }
   }
   .contact-info {
-
+    @media(max-width: 1284px) {
+      display: none;
+    }
   }
 }

@@ -1,23 +1,38 @@
 body[data-action='gallery'] {
   .gallery-entry {
     display: flex;
-    //flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    @media(max-width: 1284px) {
+      justify-content: center;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+      padding: 0;
+    }
     .img-pholder {
-      //flex-basis: 90%;
     }
     .text {
       padding: 2rem;
       padding-top: 4rem;
       flex-basis: 20rem;
+      @media(max-width: 1284px) {
+        flex-basis: initial;
+        padding: 0;
+      }
     }
   }
   p {
     max-width: 720px;
   }
   .img-pholder {
-    width: 720px;
-    height: 420px;
+    width: 100%;
+    min-height: 320px;
+    max-width: 720px;
+    max-height: 420px;
     background: black;
     margin-bottom: 6rem;
+    @media(max-width: 1284px) {
+      margin-bottom: .5rem;
+    }
   }
 }

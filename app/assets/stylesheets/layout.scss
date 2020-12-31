@@ -2,6 +2,9 @@ body {
   display: flex;
   max-width: 1440px;
   margin: auto;
+  @media(max-width: 1284px) {
+    flex-wrap: wrap;
+  }
   //padding: 4rem 3rem;
   min-height: 100vh;
   .left-column {
@@ -10,14 +13,27 @@ body {
     height: 100vh;
     position: fixed;
     width: 350px;
+    @media(max-width: 1284px) {
+      position:relative;
+      height: auto;
+      padding: 2rem;
+      padding-bottom: 0;
+    }
   }
   .left-col-proxy {
     flex-basis:350px;
     min-width: 350px;
+    @media(max-width: 1284px) {
+      display:none;
+    }
   }
   .right-column {
     padding: 15.5rem 2rem 2rem 4rem;
     min-height: 101vh;
     position: relative;
+    @media(max-width: 1284px) {
+      padding: 2rem;
+      width: 100%;
+    }
   }
 }

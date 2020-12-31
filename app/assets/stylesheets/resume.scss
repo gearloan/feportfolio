@@ -2,6 +2,7 @@ body[data-action='resume'] {
   .resume {
     //padding: 9rem 4rem;
     max-width: 768px;
+    margin: auto;
     h3 {
       font-family: 'Arial Black';
       font-size: 1.25rem;
@@ -18,12 +19,19 @@ body[data-action='resume'] {
   }
   .r-main {
     display: flex;
+    justify-content: center;
+    @media(max-width: 1284px) {
+      flex-wrap: wrap;
+    }
     .r-body {
       flex-grow: 1;
     }
     .r-sidebar {
       flex-basis: 10rem;
       padding-top: 4rem;
+      @media(max-width: 1284px) {
+        flex-basis: auto;
+      }
       .me {
         background: #222;
         border-radius: 50%;
@@ -36,12 +44,18 @@ body[data-action='resume'] {
   .work-entry, .edu-entry {
     display: flex;
     margin-bottom: 2rem;
+    @media(max-width: 1284px) {
+      flex-wrap: wrap;
+    }
     .left {
       min-width: 240px;
       padding-right: 4rem;
     }
     .right {
       padding-right: 6rem;
+      @media(max-width: 1284px) {
+        padding-right: 1rem;
+      }
     }
   }
 
