@@ -78,7 +78,12 @@ body[data-action='index'] {
         background-image: url("https://storage.googleapis.com/coab-assets/images/logosprite.gif");
         background-position: -585px -262px;
       }
-
+      &:nth-of-type(9) {
+        background-image: url("https://storage.googleapis.com/coab-assets/images/logosprite.gif");
+      }
+      &:nth-of-type(10) {
+        background-image: url("https://storage.googleapis.com/coab-assets/images/logosprite.gif");
+      }
     }
   }
   .photo-grid {
