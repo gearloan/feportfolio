@@ -4,20 +4,32 @@
       John
     %br
     Fuller
-  %h4 Front End Designer
+  %h4 Code, Design, UI/UX & Direction
 
   %ul.nav
-    %li
-      =link_to 'home', root_path, :class => active_class(root_path)
-    %li
-      =link_to 'resume', static_pages_resume_path, :class => active_class(static_pages_resume_path)
-    %li
-      =link_to 'work gallery',static_pages_gallery_path, :class => active_class(static_pages_gallery_path)
+    %li{ :class => active_class(root_path) }
+      =link_to 'home', root_path
+    %li{:class => active_class(gallery_path)}
+      =link_to 'work gallery', gallery_path
+      %ul.subnav#subnav
+        %li
+          =link_to 'sbnu', "#sbnu", :class => "disable-click"
+        %li
+          =link_to 'Inman', "#inman"
+        %li
+          =link_to 'Unison', "#unison"
+        %li
+          =link_to 'vakko', "#vakko"
+
+    %li{:class => active_class(resume_path)}
+      =link_to 'resume', resume_path
+
+    -#%li{ :class => active_class(personal_path) }
+      =link_to 'about', personal_path
+
     -#%li
       =link_to 'code samples', static_pages_code_path, :class =>  active_class(static_pages_code_path)
 
   .contact-info
-    %h6.email
-      johnsfuller@gmail.com
-    %h6.phone-number
-      202-681-8640
+    %h6.email johnsfuller@gmail.com
+    %h6.phone-number 202-681-8640

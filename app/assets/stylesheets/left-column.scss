@@ -1,9 +1,9 @@
 section.left-column {
   h1 {
-    font-family: "Arial Black";
+    font-family: "ag-bd";
     font-weight: bold;
     font-size: 60px;
-    margin: 4rem initial;
+    margin-bottom: .8rem;
     margin-left: -4px;
     text-transform: uppercase;
     letter-spacing: -2px;
@@ -13,28 +13,36 @@ section.left-column {
     }
   }
   h4 {
-
+    width: 120%;
   }
   .nav {
-    padding: 4rem 1rem 4rem 0;
-    font-family: "arial black";
+    padding: 4rem 2rem 4rem 0;
+    font-family: "ag-bd";
     font-size:30px;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
     text-transform: uppercase;
     line-height: .7;
+    > li ul {display: none}
+    :nth-child(3) a.active ul {
+      display: block;
+    }
     @media(max-width: 1284px) {
       //height: 800px;
     }
-    :first-child a.active {
+    .active { ul {display: block;} }
+    :first-child.active > a {
       color:cyan;
     }
-    :nth-child(2) a.active {
-      color:magenta;
+    :nth-child(2).active > a {
+      color:#ff0054;
+      opacity: 1;
     }
-    :nth-child(3) a.active {
-      color:yellow;
+    :nth-child(3).active {
+      > a {
+        color:yellow;
+      }
     }
-    li {
+    > li {
       padding: 10px 0;
       position: relative;
       a {
@@ -43,18 +51,35 @@ section.left-column {
         &.active {
         //  color:yellow;
         }
-        :after {
+        /*:after {
           content:"";
           position: absolute;
           padding:.22rem 3rem;
           left:-.2rem;
           top:1rem;
           background:magenta;
+        }*/
+      }
+    }
+  }
+  .subnav {
+    li {
+      padding: 1px 0;
+      a{
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
+        color: white;
+        opacity:.5;
+        &.disable-click {
+          color: #ff0054;
+          opacity:.7;
         }
       }
     }
   }
   .contact-info {
+    line-height: 1.6;
     @media(max-width: 1284px) {
       display: none;
     }

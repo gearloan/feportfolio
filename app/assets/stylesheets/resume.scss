@@ -1,21 +1,45 @@
 body[data-action='resume'] {
   .resume {
     //padding: 9rem 4rem;
-    max-width: 768px;
+    max-width: 842px;
     margin: auto;
     h3 {
-      font-family: 'Arial Black';
+      font-family: 'ag-bd';
       font-size: 1.25rem;
       color:#444;
     }
     h4 {
-      margin-bottom: .5rem;
+      margin-bottom: .4rem;
     }
     h5 {
-      color:#777;
+      color:#999;
       font-style: italic;
       font-weight: initial;
+      margin-bottom: .5rem;
+      font-size: .9rem;
+
     }
+    h6 {
+      text-transform: uppercase;
+      font-size: .75rem;
+      margin-bottom: .75rem;
+      opacity: .9;
+    }
+    .r-sidebar {
+      h3:nth-of-type(2) {
+        margin-top:4rem;
+      }
+     a {
+      color: yellow;
+      font-size: .8rem;
+      margin-bottom: .5rem;
+      display: block;
+     }
+     p {
+       line-height: 1.2;
+       font-size: .8rem;
+     }
+   }
   }
   .r-main {
     display: flex;
@@ -27,7 +51,7 @@ body[data-action='resume'] {
       flex-grow: 1;
     }
     .r-sidebar {
-      flex-basis: 10rem;
+      flex-basis: 32rem;
       padding-top: 4rem;
       @media(max-width: 1284px) {
         flex-basis: auto;
@@ -52,7 +76,7 @@ body[data-action='resume'] {
       padding-right: 4rem;
     }
     .right {
-      padding-right: 6rem;
+      padding-right: 8rem;
       @media(max-width: 1284px) {
         padding-right: 1rem;
       }

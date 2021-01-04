@@ -2,10 +2,10 @@ Rails.application.routes.draw do
 
   root 'static_pages#index'
 
-  get 'static_pages/index'
+  get 'index', to: 'static_pages#index'
   get 'static_pages/code'
-  get 'static_pages/resume'
-  get 'static_pages/gallery'
-  get 'static_pages/personal'
+  get 'resume', to: 'static_pages#resume'
+  get 'gallery', to:'static_pages#gallery'
+  get 'personal', to: 'static_pages#personal'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

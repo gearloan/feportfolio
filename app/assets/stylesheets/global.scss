@@ -6,19 +6,27 @@ a {
   color: #eee;
 }
 body {
-  font-family: helvetica;
-  font-weight: bold;
+  font-family: "ag-bd";
+  font-weight: normal;
   background: #111;
   color: #eee;
 }
 p {
   font-weight: initial;
 //  font-family: 'Lato', sans-serif;
-  font-family: helvetica, sans-serif;
+  font-family: "ag-bk";
   font-size: .9rem;
   line-height: 1.6;
   margin-bottom: .75em;
 }
 h3 {
   margin: 1rem auto;
+}
+.footer-contact-info {
+  line-height: 1.8;
+  display: none;
+  @media(max-width: 1284px) {
+    display: block;
+    margin: 5rem 2rem;
+  }
 }

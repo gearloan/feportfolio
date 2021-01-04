@@ -1,7 +1,14 @@
 body[data-action='index'] {
-  .intro {
-    margin-bottom: 2rem;
-    display: flex;
+    p {
+      padding: 1rem;
+      width: 60%;
+      @media(max-width: 1284px) {
+        padding: 0rem;
+        width: 100%;
+      }
+    }
+    //margin-bottom: 2rem;
+    //display: flex;
     @media(max-width: 1284px) {
       flex-wrap: wrap;
     }
@@ -15,20 +22,30 @@ body[data-action='index'] {
       font-size: .9rem;
       font-style: italic;
     }
-    > :nth-child(2) {
+    /*> :nth-child(2) {
       font-size:2rem;
       flex-basis: 70rem;
       margin-top: -.75rem;
-    }
-  }
+    }*/
+
   ul.logo-strip {
     margin-bottom: 2rem;
+    @media(max-width: 1284px) {
+      margin-top: 2rem;
+    }
     li {
       display: inline-block;
       width: 11.8rem;
-      height: 4rem;
-      margin-left: -2px;
-      background: #222;
+      opacity: .7;
+      @media(max-width: 1284px) {
+        width: 9.4rem;
+      }
+      &:hover {
+        opacity: 1;
+      }
+      img {
+        width: 100%;
+      }
     }
   }
   .photo-grid {
@@ -36,9 +53,15 @@ body[data-action='index'] {
     li {
       display: inline-block;
       width: 48%;
-      height: 420px;
       margin-left: -2px;
-      background: #222;
+      padding: 1rem;
+      @media(max-width: 1284px) {
+        width:100%;
+        padding: 1rem 0;
+      }
+      img {
+        width: 100%;
+      }
     }
   }
 }
