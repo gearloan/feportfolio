@@ -1,9 +1,15 @@
 body[data-action='gallery'] {
+
+
+
   .project {
+    margin-bottom: 4rem;
     h3 {
-      font-size: 2.5rem;
+      font-size: 1.5rem;
       span {
         font-size: initial;
+        text-transform: capitalize;
+        opacity: .7;
       }
     }
   }

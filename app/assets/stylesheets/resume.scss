@@ -1,4 +1,24 @@
 body[data-action='resume'] {
+  padding-top: 1rem;
+  .download-pdf {
+    display: flex;
+    justify-content: space-between;
+    .graphics {
+      display: flex;
+      align-items: flex-start;
+      width: 300px;
+      :nth-child(2) {
+        width: 80px;
+      }
+
+    }
+    :nth-child(2) {
+      width: 180px;
+      margin-left: 4rem;
+    }
+
+    margin-bottom: 2rem;
+  }
   .resume {
     //padding: 9rem 4rem;
     max-width: 842px;
@@ -10,6 +30,9 @@ body[data-action='resume'] {
     }
     h4 {
       margin-bottom: .4rem;
+    }
+    .edu-entry .left h4 {
+      max-width: 140px;
     }
     h5 {
       color:#999;
@@ -26,7 +49,7 @@ body[data-action='resume'] {
       opacity: .9;
     }
     .r-sidebar {
-      h3:nth-of-type(2) {
+      h3:nth-of-type(n+1) {
         margin-top:4rem;
       }
      a {

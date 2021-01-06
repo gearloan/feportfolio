@@ -1,11 +1,105 @@
 body[data-action='personal'] {
-  .img-pholder {
-    width: 720px;
-    height: 420px;
-    background: black;
+    p {
+      padding: 1rem;
+      width: 60%;
+      @media(max-width: 1284px) {
+        padding: 0rem;
+        width: 100%;
+      }
+    }
+    //margin-bottom: 2rem;
+    //display: flex;
+    @media(max-width: 1284px) {
+      flex-wrap: wrap;
+    }
+    > :nth-child(1) {
+      //flex-basis: 4rem;
+      margin-right: 4rem;
+      margin-bottom: 1rem;
+    }
+    .byline {
+      display:block;
+      font-size: .9rem;
+      font-style: italic;
+    }
+    /*> :nth-child(2) {
+      font-size:2rem;
+      flex-basis: 70rem;
+      margin-top: -.75rem;
+    }*/
+
+  ul.logo-strip {
     margin-bottom: 2rem;
+    @media(max-width: 1284px) {
+      margin-top: 2rem;
+    }
+
+
+    li {
+      display: inline-block;
+      width: 188px;
+      height: 100px;
+      opacity: .7;
+      background-size: 410%;
+      @media(max-width: 1284px) {
+        //width: 9.4rem;
+      }
+      &:hover {
+        opacity: 1;
+      }
+      &:nth-of-type(1) {
+        background-image: url("https://storage.googleapis.com/coab-assets/images/logosprite.gif");
+      }
+      &:nth-of-type(2) {
+        background-image: url("https://storage.googleapis.com/coab-assets/images/logosprite.gif");
+        background-position: -195px 0;
+      }
+      &:nth-of-type(3) {
+        background-image: url("https://storage.googleapis.com/coab-assets/images/logosprite.gif");
+        background-position: -390px 0;
+      }
+      &:nth-of-type(4) {
+        background-image: url("https://storage.googleapis.com/coab-assets/images/logosprite.gif");
+        background-position: -585px 0;
+      }
+      &:nth-of-type(5) {
+        background-image: url("https://storage.googleapis.com/coab-assets/images/logosprite.gif");
+        background-position: 0 -262px;
+      }
+      &:nth-of-type(6) {
+        background-image: url("https://storage.googleapis.com/coab-assets/images/logosprite.gif");
+        background-position: -195px -262px;
+      }
+      &:nth-of-type(7) {
+        background-image: url("https://storage.googleapis.com/coab-assets/images/logosprite.gif");
+        background-position: -390px -262px;
+      }
+      &:nth-of-type(8) {
+        background-image: url("https://storage.googleapis.com/coab-assets/images/logosprite.gif");
+        background-position: -585px -262px;
+      }
+      &:nth-of-type(9) {
+        background-image: url("https://storage.googleapis.com/coab-assets/images/logosprite.gif");
+      }
+      &:nth-of-type(10) {
+        background-image: url("https://storage.googleapis.com/coab-assets/images/logosprite.gif");
+      }
+    }
   }
-  .cover-letter {
-    width: 60%;
+  .photo-grid {
+    width: 100%;
+    li {
+      display: inline-block;
+      width: 48%;
+      margin-left: -2px;
+      padding: 1rem;
+      @media(max-width: 1284px) {
+        width:100%;
+        padding: 1rem 0;
+      }
+      img {
+        width: 100%;
+      }
+    }
   }
 }

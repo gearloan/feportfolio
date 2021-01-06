@@ -31,15 +31,16 @@ section.left-column {
     }
     .active { ul {display: block;} }
     :first-child.active > a {
-      color:cyan;
+      color:#7400ff;
     }
     :nth-child(2).active > a {
-      color:#ff0054;
+      color:yellow;
       opacity: 1;
     }
     :nth-child(3).active {
       > a {
-        color:yellow;
+        color:cyan;
+        opacity: .7; 
       }
     }
     > li {
