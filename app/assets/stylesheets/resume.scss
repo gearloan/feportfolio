@@ -2,6 +2,7 @@ body[data-action='resume'] {
   padding-top: 1rem;
   .download-pdf {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     .graphics {
       display: flex;
@@ -49,7 +50,7 @@ body[data-action='resume'] {
       opacity: .9;
     }
     .r-sidebar {
-      h3:nth-of-type(n+1) {
+      h3:nth-of-type(n+2) {
         margin-top:4rem;
       }
      a {
