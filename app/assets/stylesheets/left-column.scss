@@ -8,7 +8,7 @@ section.left-column {
     text-transform: uppercase;
     letter-spacing: -2px;
     line-height: 0.72;
-    span {
+    a {
       margin-left:-9px;
     }
   }
@@ -40,7 +40,7 @@ section.left-column {
     :nth-child(3).active {
       > a {
         color:cyan;
-        opacity: .7; 
+        opacity: .7;
       }
     }
     > li {
@@ -81,6 +81,7 @@ section.left-column {
   }
   .contact-info {
     line-height: 1.6;
+    :nth-child(2) {font-family: "ag-bk"; letter-spacing:2px;}
     @media(max-width: 1284px) {
       display: none;
     }
