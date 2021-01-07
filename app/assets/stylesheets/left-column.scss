@@ -67,12 +67,12 @@ section.left-column {
     li {
       padding: 1px 0;
       a{
-        -webkit-transition: all 0.4s;
-        -o-transition: all 0.4s;
-        transition: all 0.4s;
+        -webkit-transition: all 0.1s;
+        -o-transition: all 0.1s;
+        transition: all 0.1s;
         color: white;
         opacity:.5;
-        &.disable-click {
+        &.active {
           color: #ff0054;
           opacity:.7;
         }
