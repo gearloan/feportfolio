@@ -26,9 +26,10 @@
 
     %li{ :class => active_class(personal_path) }
       =link_to 'about', personal_path
-    %li
+    %li{ :class => active_class(code_path) }
       =link_to 'code samples', code_path, :class =>  active_class(code_path)
 
   .contact-info
-    %h6 johnsfuller@gmail.com
+    %h6
+      =link_to "johnsfuller@gmail.com", "mailto:johnsfuller@gmail.com"
     %h6 202-681-8640

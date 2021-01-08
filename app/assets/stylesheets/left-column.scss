@@ -45,13 +45,17 @@ section.left-column {
     }
     :nth-child(2).active > a {
       color:yellow;
-      opacity: 1;
+      opacity: .9;
     }
     :nth-child(3).active {
       > a {
         color:cyan;
         opacity: .7;
       }
+    }
+    :nth-child(4).active > a {
+      color:orange;
+      opacity: .9;
     }
     > li {
       padding: 10px 0;
@@ -90,6 +94,9 @@ section.left-column {
     }
   }
   .contact-info {
+    h6 a {
+      text-decoration: underline;
+    }
     line-height: 1.6;
     :nth-child(2) {font-family: "ag-bk"; letter-spacing:2px;}
     @media(max-width: 1284px) {

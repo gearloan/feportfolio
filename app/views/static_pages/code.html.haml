@@ -1,13 +1,16 @@
-= javascript_pack_tag 'threeD'
-
 %br
-%h3 Some snippets from recent personal projects, as most of my code from work is propriatery.
+%h3 Some snippets from recent personal projects, as most of my code from work is propriatery
 
 %hr
-%p This is a Three.js product wireframe viewer
+%p Three.js product wireframe viewer
 #threeD-viewer
 
 %br
 %hr
 %p more coming sooooon
 -# %p This is another product viewer with scroll based animation
+
+
+%script{:src => "https://cdn.rawgit.com/mrdoob/three.js/master/build/three.min.js"}
+%script{:src => "https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"}
+= javascript_pack_tag 'threeD'
