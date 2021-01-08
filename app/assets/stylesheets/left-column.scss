@@ -55,7 +55,7 @@ section.left-column {
     }
     :nth-child(4).active > a {
       color:orange;
-      opacity: .9;
+      opacity: 1;
     }
     > li {
       padding: 10px 0;
@@ -80,7 +80,7 @@ section.left-column {
   .subnav {
     li {
       padding: 1px 0;
-      a{
+      a {
         -webkit-transition: all 0.1s;
         -o-transition: all 0.1s;
         transition: all 0.1s;
