@@ -18,7 +18,11 @@ body[data-action='personal'] {
     display:flex;
     justify-content: space-between;
     align-items: center;
+    @media(max-width: 768px) {
+      flex-wrap: wrap;
+    }
     .text {
+      margin-bottom: 2rem;
       img {
         width: 10rem;
       }
@@ -26,6 +30,10 @@ body[data-action='personal'] {
     > img {
       width: 28rem;
       margin:3rem;
+      @media(max-width: 768px) {
+        width:320px;
+        margin: auto;
+      }
     }
   }
 
@@ -70,10 +78,12 @@ body[data-action='personal'] {
   }
 
   ul.logo-strip {
+    margin:auto;
     margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    max-width: 946px;
     @media(max-width: 1284px) {
       margin-top: 2rem;
     }
@@ -81,52 +91,56 @@ body[data-action='personal'] {
 
     li {
       display: inline-block;
-      width: 188px;
-      height: 100px;
+      width: 155px;
+      height: 80px;
       opacity: .7;
-      background-size: 410%;
+      background-size: 504%;
+      margin:0 1rem;
       @media(max-width: 1284px) {
+        margin:initial;
         //width: 9.4rem;
       }
       &:hover {
         opacity: 1;
       }
       &:nth-of-type(1) {
-        background-image: url("https://storage.googleapis.com/coab-assets/images/logosprite.gif");
+        background-image: url("https://storage.googleapis.com/coab-assets/images/clientlogosprite.gif");
       }
       &:nth-of-type(2) {
-        background-image: url("https://storage.googleapis.com/coab-assets/images/logosprite.gif");
-        background-position: -195px 0;
+        background-image: url("https://storage.googleapis.com/coab-assets/images/clientlogosprite.gif");
+        background-position: -632px 0px;
       }
       &:nth-of-type(3) {
-        background-image: url("https://storage.googleapis.com/coab-assets/images/logosprite.gif");
-        background-position: -390px 0;
+        background-image: url("https://storage.googleapis.com/coab-assets/images/clientlogosprite.gif");
+        background-position: -316px 0;
       }
       &:nth-of-type(4) {
-        background-image: url("https://storage.googleapis.com/coab-assets/images/logosprite.gif");
-        background-position: -585px 0;
+        background-image: url("https://storage.googleapis.com/coab-assets/images/clientlogosprite.gif");
+        background-position: -474px 0;
       }
       &:nth-of-type(5) {
-        background-image: url("https://storage.googleapis.com/coab-assets/images/logosprite.gif");
-        background-position: 0 -262px;
+        background-image: url("https://storage.googleapis.com/coab-assets/images/clientlogosprite.gif");
+        background-position: 0 -216px;
       }
       &:nth-of-type(6) {
-        background-image: url("https://storage.googleapis.com/coab-assets/images/logosprite.gif");
-        background-position: -195px -262px;
+        background-image: url("https://storage.googleapis.com/coab-assets/images/clientlogosprite.gif");
+        background-position: -158px -216px;
       }
       &:nth-of-type(7) {
-        background-image: url("https://storage.googleapis.com/coab-assets/images/logosprite.gif");
-        background-position: -390px -262px;
+        background-image: url("https://storage.googleapis.com/coab-assets/images/clientlogosprite.gif");
+        background-position: -158px 0;
       }
       &:nth-of-type(8) {
-        background-image: url("https://storage.googleapis.com/coab-assets/images/logosprite.gif");
-        background-position: -585px -262px;
+        background-image: url("https://storage.googleapis.com/coab-assets/images/clientlogosprite.gif");
+        background-position: -474px -216px;
       }
       &:nth-of-type(9) {
-        background-image: url("https://storage.googleapis.com/coab-assets/images/logosprite.gif");
+        background-image: url("https://storage.googleapis.com/coab-assets/images/clientlogosprite.gif");
+        background-position: -316px -216px;
       }
       &:nth-of-type(10) {
-        background-image: url("https://storage.googleapis.com/coab-assets/images/logosprite.gif");
+        background-image: url("https://storage.googleapis.com/coab-assets/images/clientlogosprite.gif");
+        background-position: -632px -216px;
       }
     }
   }
