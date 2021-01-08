@@ -7,7 +7,7 @@ a {
   color: #eee;
 }
 body {
-  font-family: "ag-bd";
+  font-family: "ag-bd", "arial black", sans-serif;
   font-weight: normal;
   background: #111;
   color: #eee;
@@ -15,8 +15,7 @@ body {
 p {
   letter-spacing: 0.6px;
   font-weight: initial;
-//  font-family: 'Lato', sans-serif;
-  font-family: "ag-bk";
+  font-family: "ag-bk", sans-serif;
   font-size: .8rem;
   line-height: 1.6;
   margin-bottom: .75em;

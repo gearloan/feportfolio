@@ -1,6 +1,6 @@
 section.left-column {
   h1 {
-    font-family: "ag-bd";
+    font-family: "ag-bd", "arial black", sans-serif;
     font-weight: bold;
     font-size: 60px;
     margin-bottom: .8rem;
@@ -22,12 +22,12 @@ section.left-column {
     }
   }
   h4 {
-    font-family: "ag-bk";
+    font-family: "ag-bk", sans-serif;
     width: 120%;
   }
   .nav {
     padding: 4rem 2rem 4rem 0;
-    font-family: "ag-bd";
+    font-family: "ag-bd, "arial black", sans-serif";
     font-size:30px;
     letter-spacing: -1px;
     text-transform: uppercase;
@@ -98,7 +98,7 @@ section.left-column {
       text-decoration: underline;
     }
     line-height: 1.6;
-    :nth-child(2) {font-family: "ag-bk"; letter-spacing:2px;}
+    :nth-child(2) {font-family: "ag-bk", sans-serif; letter-spacing:2px;}
     @media(max-width: 1284px) {
       display: none;
     }
