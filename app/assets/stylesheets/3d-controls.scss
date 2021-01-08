@@ -1,0 +1,378 @@
+.controlbox {
+  zoom:2;
+  right: 0;
+  @media (max-width: 420px) {
+    display: none;
+  }
+}
+.controlcubes {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  margin: 25px;
+  perspective: 400px;
+  display: block;
+
+}
+
+.cube {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-200px);
+  transition: transform 1s;
+}
+
+.cube.show-front-middle {
+  transform: translateZ(-25px) rotateY(0deg);
+}
+.cube.show-right-middle {
+  transform: translateZ(-25px) rotateY(-90deg);
+}
+.cube.show-back-middle {
+  transform: translateZ(-25px) rotateY(-180deg);
+}
+.cube.show-left-middle {
+  transform: translateZ(-25px) rotateY(90deg);
+}
+.cube.show-top-middle {
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+.cube.show-bottom-middle {
+  transform: translateZ(-25px) rotateX(90deg);
+}
+.cube.show-front-cor-rt {
+  transform: translateZ(-25px) rotateX(-45deg) rotateY(-45deg) rotateZ(0deg);
+}
+.cube.show-front-cor-lt {
+  transform: translateZ(-25px) rotateX(-45deg) rotateY(45deg) rotateZ(0deg);
+}
+.cube.show-front-cor-rb {
+  transform: translateZ(-25px) rotateX(45deg) rotateY(-45deg) rotateZ(0deg);
+}
+.cube.show-front-cor-lb {
+  transform: translateZ(-25px) rotateX(45deg) rotateY(45deg) rotateZ(0deg);
+}
+.cube.show-front-top {
+  transform: translateZ(-25px) rotateX(-45deg);
+}
+.cube.show-front-bottom {
+  transform: translateZ(-25px) rotateX(45deg);
+}
+.cube.show-front-left {
+  transform: translateZ(-25px) rotateY(45deg);
+}
+.cube.show-front-right {
+  transform: translateZ(-25px) rotateY(-45deg);
+}
+
+.cube.show-right-cor-rt {
+  transform: translateZ(-25px) rotateX(-45deg) rotateY(-135deg) rotateZ(0deg);
+}
+.cube.show-right-cor-lt {
+  transform: translateZ(-25px) rotateX(-45deg) rotateY(-45deg) rotateZ(0deg);
+}
+.cube.show-right-cor-rb {
+  transform: translateZ(-25px) rotateX(45deg) rotateY(-135deg) rotateZ(0deg);
+}
+.cube.show-right-cor-lb {
+  transform: translateZ(-25px) rotateX(45deg) rotateY(-45deg) rotateZ(0deg);
+}
+.cube.show-right-top {
+  transform: translateZ(-25px) rotateY(-90deg) rotateZ(45deg);
+}
+.cube.show-right-bottom {
+  transform: translateZ(-25px) rotateY(-90deg) rotateZ(-45deg);
+}
+.cube.show-right-left {
+  transform: translateZ(-25px) rotateY(-45deg);
+}
+.cube.show-right-right {
+  transform: translateZ(-25px) rotateY(-135deg);
+}
+
+.cube.show-back-cor-rt {
+  transform: translateZ(-25px) rotateX(-45deg) rotateY(-225deg) rotateZ(0deg);
+}
+.cube.show-back-cor-lt {
+  transform: translateZ(-25px) rotateX(-45deg) rotateY(-135deg) rotateZ(0deg);
+}
+.cube.show-back-cor-rb {
+  transform: translateZ(-25px) rotateX(45deg) rotateY(-225deg) rotateZ(0deg);
+}
+.cube.show-back-cor-lb {
+  transform: translateZ(-25px) rotateX(45deg) rotateY(-135deg) rotateZ(0deg);
+}
+.cube.show-back-top {
+  transform: translateZ(-25px) rotateY(-180deg) rotateX(45deg);
+}
+.cube.show-back-bottom {
+  transform: translateZ(-25px) rotateY(-180deg) rotateX(-45deg);
+}
+.cube.show-back-left {
+  transform: translateZ(-25px) rotateY(-135deg);
+}
+.cube.show-back-right {
+  transform: translateZ(-25px) rotateY(-225deg);
+}
+
+.cube.show-left-cor-rt {
+  transform: translateZ(-25px) rotateX(-45deg) rotateY(45deg) rotateZ(0deg);
+}
+.cube.show-left-cor-lt {
+  transform: translateZ(-25px) rotateX(-45deg) rotateY(135deg) rotateZ(0deg);
+}
+.cube.show-left-cor-rb {
+  transform: translateZ(-25px) rotateX(45deg) rotateY(45deg) rotateZ(0deg);
+}
+.cube.show-left-cor-lb {
+  transform: translateZ(-25px) rotateX(45deg) rotateY(135deg) rotateZ(0deg);
+}
+.cube.show-left-top {
+  transform: translateZ(-25px) rotateY(90deg) rotateZ(-45deg);
+}
+.cube.show-left-bottom {
+  transform: translateZ(-25px) rotateY(90deg) rotateZ(45deg);
+}
+.cube.show-left-left {
+  transform: translateZ(-25px) rotateY(135deg);
+}
+.cube.show-left-right {
+  transform: translateZ(-25px) rotateY(45deg);
+}
+
+.cube.show-top-cor-rt {
+  transform: translateZ(-25px) rotateX(-45deg) rotateY(-135deg) rotateZ(0deg);
+}
+.cube.show-top-cor-lt {
+  transform: translateZ(-25px) rotateX(-45deg) rotateY(135deg) rotateZ(0deg);
+}
+.cube.show-top-cor-rb {
+  transform: translateZ(-25px) rotateX(-45deg) rotateY(-45deg) rotateZ(0deg);
+}
+.cube.show-top-cor-lb {
+  transform: translateZ(-25px) rotateX(-45deg) rotateY(45deg) rotateZ(0deg);
+}
+
+.cube.show-top-top {
+  transform: translateZ(-25px) rotateY(-180deg) rotateX(45deg);
+}
+.cube.show-top-bottom {
+  transform: translateZ(-25px) rotateX(-45deg);
+}
+.cube.show-top-left {
+  transform: translateZ(-25px) rotateY(90deg) rotateZ(-45deg);
+}
+.cube.show-top-right {
+  transform: translateZ(-25px) rotateY(-90deg) rotateZ(45deg);
+}
+
+.cube.show-bottom-cor-rt {
+  transform: translateZ(-25px) rotateX(45deg) rotateY(-45deg) rotateZ(0deg);
+}
+.cube.show-bottom-cor-lt {
+  transform: translateZ(-25px) rotateX(45deg) rotateY(45deg) rotateZ(0deg);
+}
+.cube.show-bottom-cor-rb {
+  transform: translateZ(-25px) rotateX(45deg) rotateY(-135deg) rotateZ(0deg);
+}
+.cube.show-bottom-cor-lb {
+  transform: translateZ(-25px) rotateX(45deg) rotateY(-225deg) rotateZ(0deg);
+}
+
+.cube.show-bottom-top {
+  transform: translateZ(-25px) rotateX(45deg);
+}
+.cube.show-bottom-bottom {
+  transform: translateZ(-25px) rotateY(-180deg) rotateX(-45deg);
+}
+.cube.show-bottom-left {
+  transform: translateZ(-25px) rotateY(90deg) rotateZ(45deg);
+}
+.cube.show-bottom-right {
+  transform: translateZ(-25px) rotateY(-90deg) rotateZ(-45deg);
+}
+
+.cube__face {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 10px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  background: #f8f8f8;
+}
+
+.cube__face div {
+  /* border:1px solid #eee;*/
+}
+
+/* Frontal Codex */
+.cube__face--front {
+  transform: rotateY(0deg) translateZ(25px);
+}
+
+.top-top,
+.front-top,
+.right-top,
+.back-top,
+.left-top,
+.bottom-top {
+  position: absolute;
+  width: 30px;
+  height: 10px;
+  line-height: 10px;
+  left: 10px;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
+.top-bottom,
+.front-bottom,
+.right-bottom,
+.back-bottom,
+.left-bottom,
+.bottom-bottom {
+  position: absolute;
+  width: 30px;
+  height: 10px;
+  line-height: 10px;
+  left: 10px;
+  bottom: 0px;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
+.top-left,
+.front-left,
+.right-left,
+.back-left,
+.left-left,
+.bottom-left {
+  position: absolute;
+  width: 10px;
+  height: 30px;
+  line-height: 10px;
+  top: 10px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.top-right,
+.front-right,
+.right-right,
+.back-right,
+.left-right,
+.bottom-right {
+  position: absolute;
+  width: 10px;
+  height: 30px;
+  line-height: 10px;
+  top: 10px;
+  right: 0px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.top-cor-lt,
+.front-cor-lt,
+.right-cor-lt,
+.back-cor-lt,
+.left-cor-lt,
+.bottom-cor-lt {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
+  top: 0px;
+  left: 0px;
+}
+
+.top-cor-rt,
+.front-cor-rt,
+.right-cor-rt,
+.back-cor-rt,
+.left-cor-rt,
+.bottom-cor-rt {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
+  top: 0px;
+  right: 0px;
+}
+
+.top-cor-lb,
+.front-cor-lb,
+.right-cor-lb,
+.back-cor-lb,
+.left-cor-lb,
+.bottom-cor-lb {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.top-cor-rb,
+.front-cor-rb,
+.right-cor-rb,
+.back-cor-rb,
+.left-cor-rb,
+.bottom-cor-rb {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
+  bottom: 0px;
+  right: 0px;
+}
+.top-middle,
+.front-middle,
+.right-middle,
+.back-middle,
+.left-middle,
+.bottom-middle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  left: 10px;
+  top: 10px;
+  border: 1px solid #ddd;
+}
+
+.cube__face--right {
+  transform: rotateY(90deg) translateZ(25px);
+}
+.cube__face--back {
+  transform: rotateY(180deg) translateZ(25px);
+}
+.cube__face--left {
+  transform: rotateY(-90deg) translateZ(25px);
+}
+.cube__face--top {
+  transform: rotateX(90deg) translateZ(25px);
+}
+.cube__face--bottom {
+  transform: rotateX(-90deg) translateZ(25px);
+}
+
+label {
+  margin-right: 10px;
+}
+.selecting {
+  background: #fecb00 !important;
+}
+.hovering {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.controlbox {
+  position: absolute;
+}

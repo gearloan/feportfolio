@@ -13,6 +13,10 @@
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all'
+
+    %script{:src => "https://cdn.rawgit.com/mrdoob/three.js/master/build/three.min.js"}
+    %script{:src => "https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"}
+
     = javascript_pack_tag 'application'
   %body{"data-action" => "#{controller.action_name}", "data-controller" => "#{controller.controller_path}"}
     =render "shared/leftColumn"

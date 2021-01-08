@@ -28,6 +28,7 @@ body {
     }
   }
   .right-column {
+    flex-grow: 4;
     padding: 15.5rem 2rem 2rem 4rem;
     min-height: 101vh;
     position: relative;
