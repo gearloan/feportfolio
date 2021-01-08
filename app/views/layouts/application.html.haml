@@ -1,13 +1,15 @@
 !!!
 %html
   %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
     %title John Fuller | Front End Designer
-    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
-    %meta{:content => "https://storage.googleapis.com/coab-assets/images/me.jpg", :property => "og:image"}/
-    %meta{:content => "image/png", :property => "og:image:type"}/
-    %meta{:content => "750", :property => "og:image:width"}/
-    %meta{:content => "750", :property => "og:image:height"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+    %meta{:content => "https://storage.googleapis.com/coab-assets/images/me.jpg", :property => "og:image"}
+    %meta{:content => "image/png", :property => "og:image:type"}
+    %meta{:content => "750", :property => "og:image:width"}
+    %meta{:content => "750", :property => "og:image:height"}
+
+    %link{:href => "https://storage.googleapis.com/coab-assets/images/favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}
 
     = csrf_meta_tags
     = csp_meta_tag
