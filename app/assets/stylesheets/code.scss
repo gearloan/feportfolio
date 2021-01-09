@@ -1,9 +1,16 @@
 body[data-action='code'] {
+  h6 {
+    font-size: .9rem;
+    margin-bottom: 1rem;
+  }
   #threeD-viewer {
     width: 100%;
-    height: 300px;
+    height: 420px;
     position: relative;
     z-index: 2;
+    margin-top:3rem;
   }
-
+  hr {
+    margin: 4rem 0 2rem 0;
+  }
 }

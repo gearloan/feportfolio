@@ -12,8 +12,8 @@ body[data-action='gallery'] {
     }
   }
   .gallery-entry {
+    margin-bottom: 3rem;
     @media(max-width: 1284px) {
-      margin-bottom: 1rem;
       padding: 0;
     }
     .entry-title {

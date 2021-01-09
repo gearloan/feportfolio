@@ -6,7 +6,7 @@ body {
     flex-wrap: wrap;
   }
   //padding: 4rem 3rem;
-  min-height: 100vh;
+  //min-height: 100vh;
   .left-column {
     padding: 5rem 4rem 5rem 3rem;
     top: 0;
@@ -15,7 +15,7 @@ body {
     width: 350px;
     @media(max-width: 1284px) {
       position:relative;
-      height: auto;
+      height: 450px;
       padding: 2rem;
       padding-bottom: 0;
     }

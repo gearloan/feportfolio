@@ -19,15 +19,14 @@
           =link_to 'Unison', "#unison"
         %li
           =link_to 'vakko', "#vakko"
-    -#%li{ :class => active_class(about_path) }
-      =link_to 'about', about_path
-    %li{:class => active_class(resume_path)}
-      =link_to 'resume', resume_path
-
-    %li{ :class => active_class(about_path) }
-      =link_to 'about', about_path
     %li{ :class => active_class(code_path) }
       =link_to 'code samples', code_path, :class =>  active_class(code_path)
+    -#%li{ :class => active_class(about_path) }
+      =link_to 'about', about_path
+    %li{ :class => active_class(about_path) }
+      =link_to 'about', about_path
+    %li{:class => active_class(resume_path)}
+      =link_to 'Résumé', resume_path
 
   .contact-info
     %h6

@@ -37,7 +37,7 @@ section.left-column {
       display: block;
     }
     @media(max-width: 1284px) {
-      //height: 800px;
+    //  height: 800px;
     }
     .active { ul {display: block;} }
     :first-child.active > a {

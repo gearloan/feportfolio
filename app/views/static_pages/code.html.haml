@@ -1,15 +1,24 @@
+
 %br
-%h3 Some snippets from recent personal projects, as most of my code from work is propriatery
+%h3 Recent examples from a personal project
 
 %hr
-%p Three.js product wireframe viewer
+%h6 Product wireframe viewer
+%p Code Used: Javascript, Three.js library
+%p Tools Used: Blender, Atom
 #threeD-viewer
 
 %br
 %hr
-%p more coming sooooon
--# %p This is another product viewer with scroll based animation
+%h6 Scroll Animation
+%p Code Used: Javascript, Waypoints library
+%p Tools Used: Atom, Photoshop, Camera
 
+%section#productSlide
+  =render "/shared/slider_slides"
+
+= javascript_pack_tag 'productScrollSlide'
+= javascript_pack_tag 'a-waypoints'
 
 %script{:src => "https://cdn.rawgit.com/mrdoob/three.js/master/build/three.min.js"}
 %script{:src => "https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"}
