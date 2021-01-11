@@ -10,6 +10,12 @@ body[data-action='gallery'] {
         opacity: .7;
       }
     }
+    &#unison {
+      .text {
+        margin-left: 0;
+        padding-left: 0;
+      }
+    }
   }
   .gallery-entry {
     margin-bottom: 3rem;
@@ -19,6 +25,26 @@ body[data-action='gallery'] {
     .entry-title {
       display: block;
       flex: none;
+    }
+
+    .img-slide {
+      align-items: flex-start;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      :nth-child(1), :nth-child(8) {
+        flex-basis: 60%;
+      }
+      :nth-child(2), :nth-child(7) {
+        flex-basis: 20%;
+      }
+      :nth-child(n+3):nth-child(-n+6) {
+        flex-basis: 15%;
+      }
+      @media(max-width: 1284px) {
+
+      }
     }
     .slide {
       display: flex;
