@@ -1,4 +1,16 @@
 body[data-action='code'] {
+  .code-thumb {
+    max-width: 420px;
+  }
+  #inman {
+    display: flex;
+    justify-content: space-between;
+    a {
+      font-family: "ag-bk", sans-serif;
+      color:yellow;
+      font-size: .8rem;
+    }
+  }
   .right-column {
     h6 {
       font-size: .9rem;
@@ -14,6 +26,6 @@ body[data-action='code'] {
     hr {
       margin: 4rem 0 2rem 0;
     }
-    
+
   }
 }

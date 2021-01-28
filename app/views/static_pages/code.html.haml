@@ -1,21 +1,31 @@
+%br
+%h3 Recent
+%hr
+
+.sample#inman
+  .type
+    %p Inman.com Typography Guide
+    =link_to "Open in new tab", "#", :target => "_blank"
+  =link_to image_tag("https://storage.googleapis.com/coab-assets/images/type-intro.png", :class => "code-thumb"), "#"
+%hr
+
+.sample
+  %h6 Product Demo, Wireframe Viewer
+  %p Code Used: Javascript, Three.js library
+  %p Tools Used: Blender, Atom
+  #threeD-viewer
 
 %br
-%h3 Recent examples from a personal project
 
-%hr
-%h6 Product Demo, Wireframe Viewer
-%p Code Used: Javascript, Three.js library
-%p Tools Used: Blender, Atom
-#threeD-viewer
+.sample
+  %hr
+  %h6 Product Demo, Scroll Animation
+  %p Code Used: Javascript, Waypoints library
+  %p Tools Used: Atom, Photoshop, Camera
 
-%br
-%hr
-%h6 Product Demo, Scroll Animation
-%p Code Used: Javascript, Waypoints library
-%p Tools Used: Atom, Photoshop, Camera
-
-%section#productSlide
-  =render "/shared/slider_slides"
+.sample
+  %section#productSlide
+    =render "/shared/slider_slides"
 
 = javascript_pack_tag 'productScrollSlide'
 = javascript_pack_tag 'a-waypoints'
